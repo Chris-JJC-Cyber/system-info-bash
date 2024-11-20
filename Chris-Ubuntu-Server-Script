@@ -1,0 +1,9 @@
+'system hostname' hostname
+'Operating system' lsb_release -a
+'How long the system has been online' uptime
+'Linux Kernel Version' uname -r
+'General Cpu Information' cat /proc/cpuinfo
+'General amount of memory available and free on the system in a human-readable output' free -h
+'IP information (IP address, MAC address, etc.) of all network interfaces on the system' ip addr show
+'Amount of filesystem utilization in a human-readable output and the filesystem types' df -hT
+'Last five lines of the general log file that contain the word “error” in a case-insensitive way' grep -i error /var/log/syslog | tail -n 5
